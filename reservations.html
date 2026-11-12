@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservations | Restaurant & Café</title>
+    <meta name="description"
+        content="Discover Oak & Ember, a premium restaurant and café offering signature dishes, seasonal menus, and memorable dining experiences.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>
+            Christmas Eve Dining — 24 December 2026
+            <a href="#christmas">Discover Our Festive Menu</a>
+        </p>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="index.html" class="logo">
+                OAK & EMBER
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li>
+                    <a href="reservations.html" class="nav-reserve" aria-current="page">
+                        Reserve a Table
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Reservation Hero -->
+        <section class="reservations-hero">
+            <div class="reservations-hero-content">
+                <span>YOUR TABLE AWAITS</span>
+                <h1>Reserve Your Table</h1>
+                <p>
+                    Memorable dining begins here.
+                </p>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservations-section">
+
+            <div class="reservations-container">
+
+                <!-- Form -->
+                <div class="reservations-form-area">
+
+                    <span class="section-label">
+                        PLAN YOUR VISIT
+                    </span>
+
+                    <h2>Make a Reservation Enquiry</h2>
+
+                    <p class="reservations-intro">
+                        Share your preferred dining details
+                        and our team will be delighted to
+                        assist with your reservation.
+                    </p>
+
+                    <form id="reservation-form">
+
+                        <div class="reservation-form-row">
+
+                            <div class="reservation-field">
+                                <label for="guest-name">
+                                    Full Name *
+                                </label>
+                                <input type="text" id="guest-name" name="guest-name" required autocomplete="name"
+                                    placeholder="Your full name">
+                            </div>
+
+                            <div class="reservation-field">
+                                <label for="guest-email">
+                                    Email Address *
+                                </label>
+                                <input type="email" id="guest-email" name="guest-email" required autocomplete="email"
+                                    placeholder="you@example.com">
+                            </div>
+
+                        </div>
+
+                        <div class="reservation-form-row">
+
+                            <div class="reservation-field">
+                                <label for="guest-phone">
+                                    Phone Number *
+                                </label>
+                                <input type="tel" id="guest-phone" name="guest-phone" required autocomplete="tel"
+                                    placeholder="+94 77 123 4567">
+                            </div>
+
+                            <div class="reservation-field">
+                                <label for="guest-count">
+                                    Number of Guests *
+                                </label>
+                                <select id="guest-count" name="guest-count" required>
+
+                                    <option value="">
+                                        Select guests
+                                    </option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8 Guests</option>
+                                    <option value="9+">9+ Guests</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="reservation-form-row">
+
+                            <div class="reservation-field">
+                                <label for="reservation-date">
+                                    Preferred Date *
+                                </label>
+                                <input type="date" id="reservation-date" name="reservation-date" required>
+                            </div>
+
+                            <div class="reservation-field">
+                                <label for="reservation-time">
+                                    Preferred Time *
+                                </label>
+                                <input type="time" id="reservation-time" name="reservation-time" required>
+                            </div>
+
+                        </div>
+
+                        <div class="reservation-field">
+                            <label for="reservation-requests">
+                                Special Requests
+                            </label>
+
+                            <textarea id="reservation-requests" name="reservation-requests" rows="5"
+                                placeholder="Celebrations, dietary requirements or other requests..."></textarea>
+                        </div>
+
+                        <button type="submit" class="reservation-submit">
+                            Send Reservation Enquiry
+                        </button>
+
+                        <p class="reservation-form-note">
+                            This form opens your email application
+                            with the enquiry details prepared.
+                            Your reservation is not confirmed
+                            until the restaurant responds.
+                        </p>
+
+                    </form>
+
+                </div>
+
+                <!-- Reservation Information -->
+                <aside class="reservations-info">
+
+                    <span class="section-label">
+                        GOOD TO KNOW
+                    </span>
+
+                    <h3>Dining Information</h3>
+
+                    <p>
+                        Whether you're joining us for a
+                        relaxed breakfast, an intimate
+                        dinner or a special celebration,
+                        we look forward to welcoming you.
+                    </p>
+
+                    <div class="reservation-info-block">
+                        <h4>Opening Hours</h4>
+
+                        <p>Monday – Friday</p>
+                        <strong>8:00 AM – 10:00 PM</strong>
+
+                        <p>Saturday – Sunday</p>
+                        <strong>8:00 AM – 11:00 PM</strong>
+                    </div>
+
+                    <div class="reservation-info-block">
+                        <h4>Private Celebrations</h4>
+
+                        <p>
+                            Planning a birthday, anniversary
+                            or private gathering? Include
+                            your requirements in the
+                            enquiry form.
+                        </p>
+                    </div>
+
+                    <div class="reservation-info-block">
+                        <h4>Reservation Confirmation</h4>
+
+                        <p>
+                            All reservation requests are
+                            subject to availability and
+                            confirmation.
+                        </p>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <!-- Shared Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    OAK & EMBER
+                </a>
+
+                <p>
+                    Thoughtful dining. Timeless atmosphere.
+                    Bringing people together through
+                    exceptional food and memorable moments.
+                </p>
+
+                <a href="reservations.html" class="footer-reserve">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <address>
+                    <p>Colombo, Sri Lanka</p>
+                </address>
+
+                <p>
+                    <a href="mailto:hello@oakandember.example">
+                        hello@oakandember.example
+                    </a>
+                </p>
+
+                <p class="footer-contact-note">
+                    Sample contact details for a fictional
+                    restaurant portfolio project.
+                </p>
+
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-hours">
+
+                <h3>Opening Hours</h3>
+
+                <div class="hours-row">
+                    <span>Monday – Friday</span>
+                    <span>8:00 AM – 10:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Saturday – Sunday</span>
+                    <span>8:00 AM – 11:00 PM</span>
+                </div>
+
+                <p class="hours-note">
+                    Special hours may apply during holidays.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Oak & Ember.
+                Fictional restaurant portfolio project.
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>

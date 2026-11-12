@@ -1,0 +1,816 @@
+/* ========================================
+   OAK & EMBER - RESPONSIVE STYLES
+   Tablet and Mobile Layouts
+======================================== */
+
+
+/* ========================================
+   TABLET - MAX WIDTH 1000px
+======================================== */
+
+@media (max-width: 1000px) {
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 45px;
+    }
+}
+
+
+/* ========================================
+   TABLET - MAX WIDTH 900px
+======================================== */
+
+@media (max-width: 900px) {
+
+    /* ====================================
+       NAVIGATION
+    ==================================== */
+
+    .navbar {
+        position: relative;
+        padding: 15px 5%;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu-toggle {
+        display: block;
+        flex-shrink: 0;
+        margin-left: auto;
+        position: relative;
+        z-index: 110;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 15px 6% 25px;
+        background-color: var(--ivory);
+
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px 0;
+        font-size: 13px;
+        border-bottom: 1px solid #E1E6DC;
+    }
+
+    .nav-links .nav-reserve {
+        display: block;
+        margin-top: 15px;
+        padding: 14px 20px;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    /* Hamburger animation */
+    .menu-toggle span {
+        transition: transform 0.3s ease,
+            opacity 0.3s ease;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+
+    /* ====================================
+       WELCOME SECTION
+    ==================================== */
+
+    .welcome {
+        padding: 75px 5%;
+    }
+
+    .welcome-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .welcome-text {
+        max-width: 100%;
+    }
+
+    .welcome-image img {
+        height: 500px;
+    }
+
+
+    /* ====================================
+       SIGNATURE DISHES
+    ==================================== */
+
+    .signature-dishes {
+        padding: 75px 5%;
+    }
+
+    .signature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+
+    /* ====================================
+       CHRISTMAS SPECIALS
+    ==================================== */
+
+    .seasonal-specials {
+        padding: 75px 5%;
+    }
+
+    .christmas-banner {
+        height: 400px;
+        margin-bottom: 55px;
+    }
+
+    .christmas-offer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .christmas-offer-image img {
+        height: 520px;
+    }
+
+
+    /* ====================================
+       DINING EXPERIENCE
+    ==================================== */
+
+    .dining-experience {
+        padding: 75px 5%;
+    }
+
+    .experience-gallery {
+        height: 480px;
+        gap: 15px;
+    }
+
+    .experience-side {
+        gap: 15px;
+    }
+
+
+    /* ====================================
+       TESTIMONIALS
+    ==================================== */
+
+    .testimonials {
+        padding: 75px 5%;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* ====================================
+       ABOUT PAGE
+    ==================================== */
+
+    .about-story,
+    .about-philosophy,
+    .about-occasion {
+        padding: 75px 5%;
+    }
+
+    .about-story-container,
+    .about-philosophy-container,
+    .about-occasion-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-story-image img {
+        height: 500px;
+    }
+
+    .about-philosophy-image img,
+    .about-occasion-image img {
+        height: 400px;
+    }
+
+
+    /* ====================================
+       MENU PAGE
+    ==================================== */
+
+    .menu-section {
+        padding: 75px 5%;
+    }
+
+    .menu-category {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .menu-category-image img {
+        height: 450px;
+    }
+
+
+    /* ====================================
+       GALLERY PAGE
+    ==================================== */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-section {
+        padding: 75px 5%;
+    }
+
+
+    /* ====================================
+       RESERVATIONS PAGE
+    ==================================== */
+
+    .reservations-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .reservations-section {
+        padding: 75px 5%;
+    }
+
+
+    /* ====================================
+       CAREERS PAGE
+    ==================================== */
+
+    .careers-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .careers-intro,
+    .careers-opportunities {
+        padding: 75px 5%;
+    }
+}
+
+
+/* ========================================
+   MOBILE - MAX WIDTH 600px
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* ====================================
+       GENERAL
+    ==================================== */
+
+    .logo {
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+
+    .announcement-bar {
+        padding: 10px 5%;
+    }
+
+    .announcement-bar p {
+        font-size: 10px;
+        line-height: 1.8;
+        letter-spacing: 1px;
+    }
+
+    .announcement-bar a {
+        display: inline-block;
+        margin-left: 6px;
+    }
+
+
+    /* ====================================
+       HERO CAROUSEL
+    ==================================== */
+
+    .hero {
+        height: 580px;
+    }
+
+    .hero-content {
+        width: 88%;
+    }
+
+    .hero-content h1,
+    .hero-content h2 {
+        font-size: clamp(42px, 11vw, 58px);
+        margin-bottom: 25px;
+    }
+
+    .hero-subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero-btn {
+        padding: 13px 24px;
+        font-size: 11px;
+    }
+
+    .carousel-arrow {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .carousel-arrow.prev {
+        left: 5px;
+    }
+
+    .carousel-arrow.next {
+        right: 5px;
+    }
+
+
+    /* ====================================
+       WELCOME SECTION
+    ==================================== */
+
+    .welcome {
+        padding: 60px 6%;
+    }
+
+    .welcome-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .welcome-text h2 {
+        font-size: 44px;
+    }
+
+    .welcome-text p {
+        font-size: 14px;
+    }
+
+    .welcome-image img {
+        height: 380px;
+    }
+
+
+    /* ====================================
+       SIGNATURE DISHES
+    ==================================== */
+
+    .signature-dishes {
+        padding: 60px 6%;
+    }
+
+    .signature-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .signature-heading {
+        margin-bottom: 35px;
+    }
+
+    .signature-heading h2 {
+        font-size: 42px;
+    }
+
+    .signature-info h3 {
+        font-size: 28px;
+    }
+
+
+    /* ====================================
+       CHRISTMAS SPECIALS
+    ==================================== */
+
+    .seasonal-specials {
+        padding: 60px 6%;
+    }
+
+    .seasonal-heading {
+        margin-bottom: 35px;
+    }
+
+    .seasonal-heading h2 {
+        font-size: 42px;
+    }
+
+    .christmas-banner {
+        height: 350px;
+        margin-bottom: 45px;
+    }
+
+    .christmas-banner-content h3 {
+        font-size: 42px;
+    }
+
+    .christmas-banner-content span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .christmas-banner-content p {
+        font-size: 14px;
+    }
+
+    .christmas-offer {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .christmas-offer-image img {
+        height: 420px;
+    }
+
+    .christmas-offer-content h3 {
+        font-size: 42px;
+    }
+
+    .christmas-price strong {
+        font-size: 42px;
+    }
+
+
+    /* ====================================
+       DINING EXPERIENCE
+    ==================================== */
+
+    .dining-experience {
+        padding: 60px 6%;
+    }
+
+    .experience-heading h2 {
+        font-size: 42px;
+    }
+
+    .experience-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 18px;
+    }
+
+    .experience-main {
+        height: 350px;
+    }
+
+    .experience-side {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 18px;
+    }
+
+    .experience-side .experience-image {
+        height: 280px;
+    }
+
+    .experience-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .experience-footer {
+        margin-top: 35px;
+    }
+
+    .experience-footer p {
+        font-size: 14px;
+    }
+
+
+    /* ====================================
+       TESTIMONIALS
+    ==================================== */
+
+    .testimonials {
+        padding: 60px 6%;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 42px;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        padding: 35px 25px;
+        min-width: 0;
+    }
+
+    .testimonial-card blockquote {
+        font-size: 24px;
+        line-height: 1.45;
+        overflow-wrap: break-word;
+    }
+
+
+    /* ====================================
+       RESERVATION CTA - HOMEPAGE
+    ==================================== */
+
+    .reservation-cta {
+        min-height: 480px;
+        padding: 75px 6%;
+        background-position: center;
+    }
+
+    .reservation-cta h2 {
+        font-size: 44px;
+    }
+
+    .reservation-cta p {
+        font-size: 14px;
+    }
+
+
+    /* ====================================
+       FOOTER
+    ==================================== */
+
+    .site-footer {
+        padding: 60px 6% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-bottom: 45px;
+    }
+
+    .site-footer h3 {
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+
+    /* ====================================
+       ABOUT PAGE
+    ==================================== */
+
+    .about-hero {
+        min-height: 350px;
+    }
+
+    .about-hero h1 {
+        font-size: 60px;
+    }
+
+    .about-story,
+    .about-philosophy,
+    .about-occasion {
+        padding: 60px 6%;
+    }
+
+    .about-story-text h2,
+    .about-philosophy-text h2,
+    .about-occasion-text h2 {
+        font-size: 42px;
+    }
+
+    .about-story-image img,
+    .about-philosophy-image img,
+    .about-occasion-image img {
+        height: 360px;
+    }
+
+    .about-cta {
+        padding: 70px 6%;
+    }
+
+    .about-cta h2 {
+        font-size: 46px;
+    }
+
+
+    /* ====================================
+       MENU PAGE
+    ==================================== */
+
+    .menu-hero {
+        min-height: 300px;
+    }
+
+    .menu-section {
+        padding: 60px 6%;
+    }
+
+    .menu-filters {
+        gap: 8px;
+        margin-bottom: 35px;
+    }
+
+    .menu-filter {
+        padding: 10px 14px;
+        font-size: 11px;
+    }
+
+    .menu-category-image img {
+        height: 360px;
+    }
+
+    .menu-category-content h3 {
+        font-size: 44px;
+    }
+
+    .menu-item-heading h4 {
+        font-size: 22px;
+    }
+
+    .menu-reservation {
+        padding: 65px 6%;
+    }
+
+
+    /* ====================================
+       GALLERY PAGE
+    ==================================== */
+
+    .gallery-hero {
+        min-height: 320px;
+    }
+
+    .gallery-section {
+        padding: 60px 6%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-item {
+        aspect-ratio: 4 / 3;
+    }
+
+    .gallery-cta {
+        padding: 75px 6%;
+    }
+
+    .gallery-cta h2 {
+        font-size: 46px;
+    }
+
+
+    /* ====================================
+       RESERVATIONS PAGE
+    ==================================== */
+
+    .reservations-hero {
+        min-height: 320px;
+    }
+
+    .reservations-section {
+        padding: 60px 6%;
+    }
+
+    .reservation-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .reservations-info {
+        padding: 35px 25px;
+    }
+
+    .reservation-submit {
+        width: 100%;
+    }
+
+
+    /* ====================================
+       CAREERS PAGE
+    ==================================== */
+
+    .careers-hero {
+        min-height: 350px;
+    }
+
+    .careers-intro,
+    .careers-opportunities {
+        padding: 60px 6%;
+    }
+
+    .careers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .careers-cta {
+        padding: 70px 6%;
+    }
+
+    .career-card {
+        padding: 35px 25px;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE - MAX WIDTH 480px
+======================================== */
+
+@media (max-width: 480px) {
+
+    .welcome-text h2,
+    .signature-heading h2,
+    .seasonal-heading h2,
+    .experience-heading h2,
+    .testimonials-heading h2 {
+        font-size: 38px;
+    }
+
+    .hero-content h1,
+    .hero-content h2 {
+        font-size: 42px;
+    }
+
+    .reservation-cta h2 {
+        font-size: 38px;
+    }
+
+    .about-hero h1,
+    .menu-hero h1,
+    .gallery-hero h1,
+    .reservations-hero h1,
+    .careers-hero h1 {
+        font-size: 52px;
+    }
+
+    .testimonial-card blockquote {
+        font-size: 22px;
+    }
+
+    .menu-item-heading {
+        flex-wrap: wrap;
+        gap: 5px 12px;
+    }
+
+    .menu-item-heading h4 {
+        font-size: 21px;
+    }
+}
+
+
+/* ========================================
+   ACCESSIBILITY - REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .hero-slide,
+    .signature-image img,
+    .christmas-offer-image img,
+    .experience-image img,
+    .testimonial-card,
+    .reservation-cta-btn,
+    .gallery-item img,
+    .career-card,
+    .menu-toggle span {
+        transition: none;
+    }
+}

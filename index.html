@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oak & Ember | Restaurant & Café</title>
+    <meta name="description"
+        content="Discover Oak & Ember, a premium restaurant and café offering signature dishes, seasonal menus, and memorable dining experiences.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>
+            Christmas Eve Dining — 24 December 2026
+            <a href="#christmas">Discover Our Festive Menu</a>
+        </p>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="index.html" class="logo">
+                OAK & EMBER
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li>
+                    <a href="reservations.html" class="nav-reserve">
+                        Reserve a Table
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Carousel -->
+        <section class="hero" id="home" aria-label="Restaurant highlights">
+
+            <div class="hero-slide active">
+                <img src="assets/images/hero-1.webp" alt="Oak and Ember main dining area">
+
+                <div class="hero-content">
+                    <p class="hero-subtitle">WELCOME TO OAK & EMBER</p>
+                    <h1>A Taste Worth Remembering</h1>
+                    <a href="reservations.html" class="hero-btn">
+                        Reserve a Table
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <img src="assets/images/hero-2.webp" alt="Elegant private dining area">
+
+                <div class="hero-content">
+                    <p class="hero-subtitle">EXCEPTIONAL DINING</p>
+                    <h2>Moments Made Special</h2>
+                    <a href="about.html" class="hero-btn">
+                        Discover Our Story
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <img src="assets/images/hero-3.webp" alt="Oak and Ember café seating area">
+
+                <div class="hero-content">
+                    <p class="hero-subtitle">CRAFTED WITH CARE</p>
+                    <h2>More Than Just a Meal</h2>
+                    <a href="menu.html" class="hero-btn">
+                        Explore Our Menu
+                    </a>
+                </div>
+            </div>
+
+            <button class="carousel-arrow prev" type="button" aria-label="Previous slide">
+                &#10094;
+            </button>
+
+            <button class="carousel-arrow next" type="button" aria-label="Next slide">
+                &#10095;
+            </button>
+
+            <div class="carousel-dots" aria-label="Choose a slide">
+                <button class="dot active" type="button" aria-label="Show slide 1"></button>
+                <button class="dot" type="button" aria-label="Show slide 2"></button>
+                <button class="dot" type="button" aria-label="Show slide 3"></button>
+            </div>
+
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="welcome" id="welcome">
+            <div class="welcome-container">
+
+                <div class="welcome-text">
+                    <span class="section-label">OUR STORY</span>
+
+                    <h2>Welcome to <br> Oak & Ember</h2>
+
+                    <p>
+                        At Oak & Ember, we believe that great food
+                        brings people together. From carefully crafted
+                        dishes to warm and welcoming spaces, every
+                        detail is designed to create memorable moments.
+                    </p>
+
+                    <p>
+                        Whether you're joining us for a morning coffee,
+                        a leisurely lunch, or an intimate dinner,
+                        we invite you to experience dining that feels
+                        both special and familiar.
+                    </p>
+
+                    <a href="about.html" class="welcome-btn">
+                        Discover Our Story
+                    </a>
+                </div>
+
+                <div class="welcome-image">
+                    <img src="assets/images/welcome.webp" alt="Elegant dining atmosphere at Oak and Ember"
+                        loading="lazy">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Signature Dishes Section -->
+        <section class="signature-dishes" id="signature-dishes">
+
+            <div class="signature-container">
+
+                <div class="signature-heading">
+                    <span class="section-label">CRAFTED WITH PASSION</span>
+
+                    <h2>Our Signature Dishes</h2>
+
+                    <p>
+                        Discover a selection of our most loved creations,
+                        thoughtfully prepared with fresh ingredients
+                        and a passion for exceptional flavour.
+                    </p>
+                </div>
+
+                <div class="signature-grid">
+
+                    <!-- Dish 1 -->
+                    <article class="signature-card">
+                        <div class="signature-image">
+                            <img src="assets/images/signature-1.webp"
+                                alt="Herb-crusted salmon served with seasonal vegetables" loading="lazy">
+                        </div>
+
+                        <div class="signature-info">
+                            <h3>Herb-Crusted Salmon</h3>
+
+                            <p>
+                                Fresh Atlantic salmon with garden herbs,
+                                seasonal vegetables and lemon butter sauce.
+                            </p>
+
+                            <span class="signature-price">LKR 4,800</span>
+                        </div>
+                    </article>
+
+                    <!-- Dish 2 -->
+                    <article class="signature-card">
+                        <div class="signature-image">
+                            <img src="assets/images/signature-2.webp" alt="Creamy truffle mushroom pasta"
+                                loading="lazy">
+                        </div>
+
+                        <div class="signature-info">
+                            <h3>Truffle Mushroom Pasta</h3>
+
+                            <p>
+                                Handmade pasta tossed with wild mushrooms,
+                                parmesan and a delicate truffle cream sauce.
+                            </p>
+
+                            <span class="signature-price">LKR 3,600</span>
+                        </div>
+                    </article>
+
+                    <!-- Dish 3 -->
+                    <article class="signature-card">
+                        <div class="signature-image">
+                            <img src="assets/images/signature-3.webp" alt="Grilled beef tenderloin with mashed potatoes"
+                                loading="lazy">
+                        </div>
+
+                        <div class="signature-info">
+                            <h3>Grilled Beef Tenderloin</h3>
+
+                            <p>
+                                Tender grilled beef served with creamy
+                                mashed potatoes and rosemary jus.
+                            </p>
+
+                            <span class="signature-price">LKR 6,200</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="signature-footer">
+                    <a href="menu.html" class="signature-btn">
+                        Explore Full Menu
+                    </a>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Christmas Seasonal Specials -->
+        <section class="seasonal-specials" id="christmas">
+
+            <div class="seasonal-heading">
+                <span class="section-label">THE FESTIVE SEASON 2026</span>
+                <h2>Christmas at Oak & Ember</h2>
+                <p>
+                    Celebrate the season with exceptional food,
+                    festive warmth and unforgettable moments.
+                </p>
+            </div>
+
+            <!-- Christmas Banner -->
+            <div class="christmas-banner">
+                <img src="assets/images/christmas-banner.webp" alt="Oak and Ember restaurant decorated for Christmas"
+                    loading="lazy">
+
+                <div class="christmas-banner-content">
+                    <span>THURSDAY, 24 DECEMBER 2026</span>
+                    <h3>A Christmas Eve to Remember</h3>
+                    <p>
+                        An enchanting evening of festive dining
+                        awaits you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Christmas Dinner Offer -->
+            <div class="christmas-offer">
+
+                <div class="christmas-offer-image">
+                    <img src="assets/images/christmas-dinner.webp" alt="Festive Christmas roast dinner" loading="lazy">
+                </div>
+
+                <div class="christmas-offer-content">
+                    <span class="section-label">
+                        A SPECIAL FESTIVE EXPERIENCE
+                    </span>
+
+                    <h3>Our Christmas Eve Dinner</h3>
+
+                    <p>
+                        Gather with family and friends for a
+                        beautifully prepared three-course dinner,
+                        inspired by the flavours and traditions
+                        of Christmas.
+                    </p>
+
+                    <div class="christmas-menu-preview">
+                        <p>
+                            <strong>Starter</strong>
+                            Roasted Pumpkin &amp; Sage Soup
+                        </p>
+
+                        <p>
+                            <strong>Main Course</strong>
+                            Traditional Christmas Roast
+                        </p>
+
+                        <p>
+                            <strong>Dessert</strong>
+                            Chocolate Yule Log
+                        </p>
+                    </div>
+
+                    <div class="christmas-price">
+                        <span>THREE-COURSE DINNER</span>
+                        <strong>LKR 8,900</strong>
+                        <small>Per person</small>
+                    </div>
+
+                    <p class="christmas-extra">
+                        Enjoy a complimentary festive welcome mocktail.
+                        Groups of six or more receive 10% off
+                        the Christmas Eve menu.
+                    </p>
+
+                    <a href="reservations.html" class="christmas-btn">
+                        Enquire About a Table
+                    </a>
+
+                    <p class="christmas-note">
+                        All reservations are subject to confirmation.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- Dining Experience Section -->
+        <section class="dining-experience" id="experience">
+
+            <div class="experience-container">
+
+                <div class="experience-heading">
+                    <span class="section-label">
+                        THE OAK & EMBER EXPERIENCE
+                    </span>
+
+                    <h2>More Than Just Dining</h2>
+
+                    <p>
+                        Beautiful spaces. Thoughtful details.
+                        Memorable moments.
+                    </p>
+                </div>
+
+                <div class="experience-gallery">
+
+                    <!-- Large Left Image -->
+                    <div class="experience-image experience-main">
+                        <img src="assets/images/experience-1.webp" alt="Elegant main dining area at Oak and Ember"
+                            loading="lazy">
+                    </div>
+
+                    <!-- Two Right Images -->
+                    <div class="experience-side">
+
+                        <div class="experience-image">
+                            <img src="assets/images/experience-2.webp" alt="Private dining room at Oak and Ember"
+                                loading="lazy">
+                        </div>
+
+                        <div class="experience-image">
+                            <img src="assets/images/experience-3.webp" alt="Relaxed café seating at Oak and Ember"
+                                loading="lazy">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="experience-footer">
+                    <p>
+                        From intimate dinners and special celebrations
+                        to leisurely afternoons over coffee, discover
+                        the spaces that make every visit memorable.
+                    </p>
+
+                    <a href="gallery.html" class="experience-btn">
+                        Explore Our Gallery
+                    </a>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Guest Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+
+            <div class="testimonials-container">
+
+                <div class="testimonials-heading">
+                    <span class="section-label">KIND WORDS</span>
+
+                    <h2>What Our Guests Say</h2>
+
+                    <p>
+                        A glimpse into the Oak &amp; Ember experience.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+
+                    <!-- Review 1 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "A beautiful atmosphere and an unforgettable
+                            dining experience. Every moment felt special."
+                        </blockquote>
+
+                        <p class="testimonial-author">Amelia R.</p>
+                    </article>
+
+                    <!-- Review 2 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "Every detail felt thoughtfully considered,
+                            from the delicious food to the warm service."
+                        </blockquote>
+
+                        <p class="testimonial-author">Daniel M.</p>
+                    </article>
+
+                    <!-- Review 3 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            "The perfect setting for a relaxed evening
+                            with family and friends. Truly memorable."
+                        </blockquote>
+
+                        <p class="testimonial-author">Sophie L.</p>
+                    </article>
+
+                </div>
+
+                <p class="testimonials-disclaimer">
+                    Sample testimonials created for this fictional
+                    restaurant portfolio project.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Final Reservation CTA -->
+        <section class="reservation-cta" id="reserve">
+
+            <div class="reservation-cta-container">
+
+                <span class="reservation-cta-label">
+                    YOUR TABLE AWAITS
+                </span>
+
+                <h2>Make Every Moment Memorable</h2>
+
+                <p>
+                    Whether it's a special celebration, an intimate
+                    dinner or a simple evening together, we look
+                    forward to welcoming you to Oak &amp; Ember.
+                </p>
+
+                <a href="reservations.html" class="reservation-cta-btn">
+                    Request a Reservation
+                </a>
+
+                <span class="reservation-cta-note">
+                    Reservations are subject to confirmation.
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Shared Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    OAK & EMBER
+                </a>
+
+                <p>
+                    Thoughtful dining. Timeless atmosphere.
+                    Bringing people together through
+                    exceptional food and memorable moments.
+                </p>
+
+                <a href="reservations.html" class="footer-reserve">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <address>
+                    <p>Colombo, Sri Lanka</p>
+                </address>
+
+                <p>
+                    <a href="mailto:hello@oakandember.example">
+                        hello@oakandember.example
+                    </a>
+                </p>
+
+                <p class="footer-contact-note">
+                    Sample contact details for a fictional
+                    restaurant portfolio project.
+                </p>
+
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-hours">
+
+                <h3>Opening Hours</h3>
+
+                <div class="hours-row">
+                    <span>Monday – Friday</span>
+                    <span>8:00 AM – 10:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Saturday – Sunday</span>
+                    <span>8:00 AM – 11:00 PM</span>
+                </div>
+
+                <p class="hours-note">
+                    Special hours may apply during holidays.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Oak & Ember.
+                Fictional restaurant portfolio project.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>

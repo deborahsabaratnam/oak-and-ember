@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | Restaurant & Café</title>
+    <meta name="description"
+        content="Discover Oak & Ember, a premium restaurant and café offering signature dishes, seasonal menus, and memorable dining experiences.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>
+            Christmas Eve Dining — 24 December 2026
+            <a href="index.html#christmas">Discover Our Festive Menu</a>
+        </p>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="index.html" class="logo">
+                OAK & EMBER
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="menu.html" aria-current="page">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li>
+                    <a href="reservations.html" class="nav-reserve">
+                        Reserve a Table
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Menu Hero -->
+        <section class="menu-hero">
+            <span>OAK & EMBER RESTAURANT & CAFÉ</span>
+            <h1>Our Menu</h1>
+            <p>Thoughtfully crafted for every moment of the day.</p>
+        </section>
+
+        <!-- Menu Categories -->
+        <section class="menu-section">
+
+            <div class="menu-heading">
+                <span class="section-label">DISCOVER OUR FLAVOURS</span>
+                <h2>Something for Every Occasion</h2>
+                <p>
+                    From leisurely breakfasts to elegant dinners,
+                    discover the flavours of Oak & Ember.
+                </p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="menu-filters" role="group" aria-label="Filter menu by category">
+
+                <button class="menu-filter active" type="button" data-category="breakfast"
+                    aria-pressed="true">Breakfast</button>
+
+                <button class="menu-filter" type="button" data-category="lunch" aria-pressed="false">Lunch</button>
+
+                <button class="menu-filter" type="button" data-category="dinner" aria-pressed="false">Dinner</button>
+
+                <button class="menu-filter" type="button" data-category="dessert" aria-pressed="false">Desserts</button>
+
+                <button class="menu-filter" type="button" data-category="beverage"
+                    aria-pressed="false">Beverages</button>
+            </div>
+
+            <!-- Breakfast -->
+            <div class="menu-category active" data-menu="breakfast">
+                <div class="menu-category-image">
+                    <img src="assets/images/breakfast.webp" alt="Breakfast selection at Oak and Ember">
+                </div>
+
+                <div class="menu-category-content">
+                    <h3>Breakfast</h3>
+                    <p class="menu-category-intro">
+                        Start your morning with something special.
+                    </p>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Classic English Breakfast</h4>
+                            <span>LKR 2,800</span>
+                        </div>
+                        <p>Eggs, sausages, baked beans, toast and grilled tomatoes.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Avocado & Poached Eggs</h4>
+                            <span>LKR 2,400</span>
+                        </div>
+                        <p>Sourdough toast, smashed avocado and poached eggs.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Buttermilk Pancakes</h4>
+                            <span>LKR 2,200</span>
+                        </div>
+                        <p>Fluffy pancakes with seasonal fruit and maple syrup.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="menu-category" data-menu="lunch" hidden>
+                <div class="menu-category-image">
+                    <img src="assets/images/lunch.webp" alt="Lunch selection at Oak and Ember" loading="lazy">
+                </div>
+
+                <div class="menu-category-content">
+                    <h3>Lunch</h3>
+                    <p class="menu-category-intro">
+                        Fresh flavours for a leisurely afternoon.
+                    </p>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Grilled Chicken Sandwich</h4>
+                            <span>LKR 2,900</span>
+                        </div>
+                        <p>Grilled chicken, lettuce and herb mayonnaise on toasted bread.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Creamy Mushroom Risotto</h4>
+                            <span>LKR 3,200</span>
+                        </div>
+                        <p>Arborio rice with wild mushrooms and parmesan.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Garden Fresh Salad</h4>
+                            <span>LKR 2,100</span>
+                        </div>
+                        <p>Seasonal greens, cherry tomatoes and house dressing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dinner -->
+            <div class="menu-category" data-menu="dinner" hidden>
+                <div class="menu-category-image">
+                    <img src="assets/images/dinner.webp" alt="Dinner selection at Oak and Ember" loading="lazy">
+                </div>
+
+                <div class="menu-category-content">
+                    <h3>Dinner</h3>
+                    <p class="menu-category-intro">
+                        An elegant ending to your day.
+                    </p>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Herb-Crusted Salmon</h4>
+                            <span>LKR 4,800</span>
+                        </div>
+                        <p>Fresh salmon, seasonal vegetables and lemon butter sauce.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Grilled Beef Tenderloin</h4>
+                            <span>LKR 6,200</span>
+                        </div>
+                        <p>Tender beef with creamy mashed potatoes and rosemary jus.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Truffle Mushroom Pasta</h4>
+                            <span>LKR 3,600</span>
+                        </div>
+                        <p>Handmade pasta with mushrooms and truffle cream sauce.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category" data-menu="dessert" hidden>
+                <div class="menu-category-image">
+                    <img src="assets/images/dessert.webp" alt="Dessert selection at Oak and Ember" loading="lazy">
+                </div>
+
+                <div class="menu-category-content">
+                    <h3>Desserts</h3>
+                    <p class="menu-category-intro">
+                        A sweet finish to every meal.
+                    </p>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Chocolate Lava Cake</h4>
+                            <span>LKR 1,800</span>
+                        </div>
+                        <p>Warm chocolate cake with a molten centre and vanilla ice cream.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Classic Tiramisu</h4>
+                            <span>LKR 1,650</span>
+                        </div>
+                        <p>Espresso-soaked sponge with mascarpone cream.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Vanilla Panna Cotta</h4>
+                            <span>LKR 1,500</span>
+                        </div>
+                        <p>Silky vanilla cream with seasonal berry compote.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-category" data-menu="beverage" hidden>
+                <div class="menu-category-image">
+                    <img src="assets/images/beverage.webp" alt="Beverage selection at Oak and Ember" loading="lazy">
+                </div>
+
+                <div class="menu-category-content">
+                    <h3>Beverages</h3>
+                    <p class="menu-category-intro">
+                        Crafted to refresh and delight.
+                    </p>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Cappuccino</h4>
+                            <span>LKR 950</span>
+                        </div>
+                        <p>Rich espresso topped with velvety steamed milk.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Iced Matcha Latte</h4>
+                            <span>LKR 1,200</span>
+                        </div>
+                        <p>Premium matcha blended with chilled milk.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-heading">
+                            <h4>Fresh Tropical Juice</h4>
+                            <span>LKR 1,100</span>
+                        </div>
+                        <p>Refreshing seasonal tropical fruit blend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="menu-disclaimer">
+                Sample menu and prices for a fictional restaurant portfolio project.
+            </p>
+
+        </section>
+
+        <!-- Reservation CTA -->
+        <section class="menu-reservation">
+            <h2>Join Us at Oak & Ember</h2>
+            <p>Discover your next memorable dining experience.</p>
+            <a href="reservations.html" class="menu-reservation-btn">
+                Request a Reservation
+            </a>
+        </section>
+
+    </main>
+
+
+    <!-- Shared Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    OAK & EMBER
+                </a>
+
+                <p>
+                    Thoughtful dining. Timeless atmosphere.
+                    Bringing people together through
+                    exceptional food and memorable moments.
+                </p>
+
+                <a href="reservations.html" class="footer-reserve">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <address>
+                    <p>Colombo, Sri Lanka</p>
+                </address>
+
+                <p>
+                    <a href="mailto:hello@oakandember.example">
+                        hello@oakandember.example
+                    </a>
+                </p>
+
+                <p class="footer-contact-note">
+                    Sample contact details for a fictional
+                    restaurant portfolio project.
+                </p>
+
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-hours">
+
+                <h3>Opening Hours</h3>
+
+                <div class="hours-row">
+                    <span>Monday – Friday</span>
+                    <span>8:00 AM – 10:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Saturday – Sunday</span>
+                    <span>8:00 AM – 11:00 PM</span>
+                </div>
+
+                <p class="hours-note">
+                    Special hours may apply during holidays.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Oak & Ember.
+                Fictional restaurant portfolio project.
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
